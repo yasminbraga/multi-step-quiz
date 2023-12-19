@@ -3,6 +3,7 @@ import Adds from "@/app/steps/adds";
 import Info from "@/app/steps/info";
 import Plan from "@/app/steps/plan";
 import Summary from "@/app/steps/summary";
+import Thanks from "@/app/steps/thanks";
 import { ReactNode, createContext, useState } from "react";
 
 type PropsType = {
@@ -47,6 +48,7 @@ export const QuizProvider = ({ children }: PropsType) => {
     1: <Plan />,
     2: <Adds />,
     3: <Summary />,
+    4: <Thanks />,
   };
 
   const totalSteps = Object.keys(steps).length;
