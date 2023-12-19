@@ -27,7 +27,7 @@ const Buttons: React.FC = () => {
       {step < totalSteps - 1 ? (
         <button
           type="button"
-          className="bg-marine-blue text-white border-none py-3 px-5 rounded-md text-xs font-medium hover:opacity-80 "
+          className="bg-marine-blue text-white border-none py-3 px-5 rounded-md text-xs font-medium hover:opacity-80"
           onClick={handleNext}
         >
           Next Step
@@ -35,7 +35,8 @@ const Buttons: React.FC = () => {
       ) : (
         <button
           type="button"
-          className="bg-purplish-blue text-white border-none py-3 px-5 rounded-md text-xs font-medium hover:opacity-80 "
+          className="bg-purplish-blue text-white border-none py-3 px-5 rounded-md text-xs font-medium hover:opacity-80"
+          onClick={handleNext}
         >
           Confirm
         </button>
